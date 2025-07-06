@@ -1,121 +1,170 @@
 # NIDS-ML: Network Intrusion Detection System using Machine Learning
 
-📌 About the Project
-NIDS-ML is a Machine Learning-based system designed to detect network intrusions and malicious activities in real-time or offline network traffic data. As cyber threats continue to evolve, it's crucial to build intelligent and scalable solutions that can identify unauthorized access, DoS attacks, port scans, and other malicious patterns with high accuracy.
+## 📌 About the Project
 
-This project utilizes supervised learning techniques to classify network traffic into normal or attack categories. It serves as a foundational system for security analysts, researchers, and developers aiming to build next-generation intrusion detection systems.
+**NIDS-ML** is a Machine Learning-based system designed to detect **network intrusions and malicious activities** in real-time or from offline network traffic data.
 
-Table of Contents
-Introduction
+As cyber threats continue to evolve, it's crucial to build intelligent and scalable solutions that can identify:
+- Unauthorized access  
+- DoS/DDoS attacks  
+- Port scans  
+- Other malicious patterns  
 
- Requirements
+This project uses **supervised learning techniques** to classify traffic into **normal or attack** categories. It serves as a foundational tool for security analysts, researchers, and developers to build next-gen intrusion detection systems.
 
- How to Use
+---
+## Team Member
+-[Vishal MIshra] (https://github.com/masterv1842c)
 
- Preview
+## Table of Contents
 
- Contribution
+- [Introduction](#-introduction)  
+- [Requirements](#-requirements)  
+- [How to Use](#-how-to-use)  
+- [Preview](#-preview)  
+- [Contribution](#-contribution)  
+- [ℹAbout](#-about)  
 
- About
+---
 
- Introduction
-This project implements classic and modern ML algorithms to detect intrusions in a computer network. It includes:
+## Introduction
 
-Feature selection and preprocessing from popular datasets like KDD99, NSL-KDD, or CICIDS2017
+This project implements both **classic and modern ML algorithms** to detect intrusions. Features:
 
-Model training and evaluation using algorithms like Random Forest, SVM, XGBoost, and Neural Networks
+-   Feature selection and preprocessing from datasets like:
+  - KDD99
+  - NSL-KDD
+  - CICIDS2017  
+-   Model training using:
+  - Random Forest
+  - SVM
+  - XGBoost
+  - Neural Networks  
+-   Real-time or batch prediction  
+-   Performance metrics:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - Confusion Matrix
 
-Real-time or batch prediction pipeline for classifying new network traffic samples
+Our goal: A model that’s **accurate, interpretable**, and **deployable** in real-world systems.
 
-Performance metrics including confusion matrix, accuracy, precision, recall, and F1-score
+---
 
-The ultimate goal is to build a system that’s not only accurate but also interpretable and deployable in real-world scenarios.
+##  Requirements
 
-# Requirements
-Tool/Library	Version
-Python	3.8 / 3.9
-NumPy	1.23.1
-Pandas	1.5.3
-Scikit-learn	1.2.2
-Matplotlib	3.7.1
-XGBoost (optional)	1.7.0+
-TensorFlow/Keras	2.12 (if using DNN/CNN)
+>  Tip: Use `virtualenv` or `conda` for isolated environments.
 
-Tip: Use virtualenv or conda for isolated environments.
+| Tool/Library       | Version    |
+|--------------------|------------|
+| Python             | 3.8 / 3.9  |
+| NumPy              | 1.23.1     |
+| Pandas             | 1.5.3      |
+| Scikit-learn       | 1.2.2      |
+| Matplotlib         | 3.7.1      |
+| XGBoost (optional) | 1.7.0+     |
+| TensorFlow/Keras   | 2.12       |
 
-# How to Use
-STEP -1:
-Clone the Repository
-bash
-Copy
-Edit
+---
+
+##  How to Use
+
+###  STEP 1: Clone the Repository
+
+```bash
 git clone https://github.com/your-repo/nids-ml.git
 cd nids-ml
-STEP - 2:
-Install Dependencies
-bash
-Copy
-Edit
+```
+### STEP 2: Install Dependencies
+```bash
 pip install -r requirements.txt
-STEP - 3: Prepare Your Dataset
-Download and extract a dataset like NSL-KDD, CICIDS2017, or UNSW-NB15. Place the CSV in the data/ directory.
+```
+### STEP 3: Prepare the Dataset
+Download a dataset such as:
 
-📁 Example: data/NSL-KDD/KDDTrain+.csv
+NSL-KDD
 
-STEP-4:
-Run the Model
-Open the main notebook:
+CICIDS2017
 
-bash
-Copy
-Edit
+UNSW-NB15
+
+Place it in the data/ directory:
+
+```bash
+data/NSL-KDD/KDDTrain+.csv
+```
+### STEP 4: Run the Model
+Using Jupyter Notebook:
+
+```bash
 jupyter notebook NIDS-ML.ipynb
-or run the Python script:
+```
+Or run as a Python script:
 
-bash
-Copy
-Edit
+```bash
 python nids_model.py
-STEP - 5: 
-View Results
-After execution, you’ll see:
+```
+### STEP 5: View Results
+You’ll see outputs including:
 
-Classification Report
+ Classification Report
 
-Confusion Matrix
+ Confusion Matrix
 
-Visual graphs for accuracy/loss or feature importance
+ Accuracy/Loss Graphs
 
-Real-time predictions if enabled
+ Real-time Predictions (if enabled)
 
-#Preview
-Sample outputs from the notebook/script:
+# Preview
+Sample outputs from the system:
 
 Attack Detected: DOS
-
 Attack Detected: PortScan
-
 Traffic Type: Normal
+You can also visualize:
 
-Add graphs here (accuracy, confusion matrix, etc.)
+Model loss/accuracy over epochs
 
-# Contribution
-Want to contribute?
+Feature importance for tree-based models
+
+Evaluation metrics for each attack type
+
+
+🤝 Contribution
+We welcome contributions! Please follow the steps below:
 
 Fork this repository
 
-Create your feature branch (git checkout -b feature/your-feature)
+Create a new branch
 
-Commit your changes (git commit -m 'Add some feature')
+```bash
+git checkout -b feature/your-feature-name
+```
+Commit your changes
 
-Push to the branch (git push origin feature/your-feature)
+```bash
+git commit -m "Add: your message"
+```
+Push to your fork
 
-Create a new Pull Request
+```bash
+git push origin feature/your-feature-name
+```
+Create a Pull Request on GitHub
 
-Make sure your changes align with the project goals and maintain compatibility with existing code.
+Ensure your code is clean, documented, and aligns with the project goals.
 
-About
-NIDS-ML is part of a cybersecurity research initiative to create an intelligent defense layer for detecting malicious activity. It uses classic ML + optional deep learning for robust classification of network attacks.
+ℹ About
+NIDS-ML is part of a cybersecurity initiative to build intelligent intrusion detection systems using machine learning and optionally deep learning.
 
-Topics
-cybersecurity network-security machine-learning intrusion-detection classification nsl-kdd scikit-learn cnn tensorflow
+This repository is focused on:
+
+ Feature engineering from network traffic
+
+ Binary or multi-class attack classification
+
+ Reproducible ML pipelines
+
+# Topics
+cybersecurity network-security machine-learning intrusion-detection nsl-kdd scikit-learn cnn tensorflow 
