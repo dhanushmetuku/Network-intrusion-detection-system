@@ -15,6 +15,7 @@ This project uses **supervised learning techniques** to classify traffic into **
 ---
 ## Team Member
 -[Vishal MIshra] (https://github.com/masterv1842c) - Model training , Frontend , Flask , Model integration 
+
 -[my contribution] - Data pre-processing , Model training 
 
 ## Table of Contents
