@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Network Intrusion Detection System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background-image: url('/static/backgroundd.jpeg'); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #fff;
+    }
+
+    .panel {
+      width: 35%;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      border-radius: 15px;
+      margin-right: 50px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+
+    .panel h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff;
+      text-align: center;
+    }
+
+    .panel button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      background-color: #00ffff;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    .panel button:hover {
+      background-color: #00cccc;
+    }
+
+    .output {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(0, 255, 255, 0.1);
+      border: 1px solid #00ffff;
+      border-radius: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="panel">
+    <h1>Network Intrusion Detection System</h1>
+    <button onclick="predict()">Predict</button>
+    <div class="output" id="output">Prediction result will appear here.</div>
+  </div>
+
+  <script>
+    function predict() {
+      // Simulated output
+      const types = ["Normal Traffic", "DDoS Attack", "SQL Injection", "Port Scan Detected"];
+      const randomOutput = types[Math.floor(Math.random() * types.length)];
+      document.getElementById("output").innerText = `Prediction: ${randomOutput}`;
+    }
+  </script>
+
+</body>
+</html>
