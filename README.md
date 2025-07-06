@@ -1,4 +1,5 @@
-#NIDS-ML: Network Intrusion Detection System using Machine Learning
+# NIDS-ML: Network Intrusion Detection System using Machine Learning
+
 📌 About the Project
 NIDS-ML is a Machine Learning-based system designed to detect network intrusions and malicious activities in real-time or offline network traffic data. As cyber threats continue to evolve, it's crucial to build intelligent and scalable solutions that can identify unauthorized access, DoS attacks, port scans, and other malicious patterns with high accuracy.
 
@@ -30,7 +31,7 @@ Performance metrics including confusion matrix, accuracy, precision, recall, and
 
 The ultimate goal is to build a system that’s not only accurate but also interpretable and deployable in real-world scenarios.
 
-⚙️ Requirements
+# Requirements
 Tool/Library	Version
 Python	3.8 / 3.9
 NumPy	1.23.1
@@ -40,9 +41,9 @@ Matplotlib	3.7.1
 XGBoost (optional)	1.7.0+
 TensorFlow/Keras	2.12 (if using DNN/CNN)
 
-💡 Tip: Use virtualenv or conda for isolated environments.
+Tip: Use virtualenv or conda for isolated environments.
 
-🚀 How to Use
+# How to Use
 STEP -1:
 Clone the Repository
 bash
@@ -87,7 +88,7 @@ Visual graphs for accuracy/loss or feature importance
 
 Real-time predictions if enabled
 
-Preview
+#Preview
 Sample outputs from the notebook/script:
 
 Attack Detected: DOS
@@ -98,8 +99,8 @@ Traffic Type: Normal
 
 Add graphs here (accuracy, confusion matrix, etc.)
 
-#Contribution
-Want to contribute? Awesome!
+# Contribution
+Want to contribute?
 
 Fork this repository
 
